@@ -6,29 +6,36 @@
     <title>Tiny Slider Pratice</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/tiny-slider/dist/tiny-slider.css">
 </head>
 <body>
-    <div class="my-slider">
-        <div>
-            <h1>teste</h1>
+    <div class="my-slider container">
+        <div id="div1" class="dv">
+            <img src="img-1.png" alt="">
         </div>
-        <div>
-            <h1>teste</h1>
+        <div id="div2" class="dv">
+            <img src="img-2.png" alt="">
         </div>
-        <div>
-            <h1>teste</h1>
+        <div id="div3" class="dv">
+            <img src="/img-3.jpg" alt="">
         </div>
       </div>
       
       
       <script type="module">
-        import {tns} from './src/tiny-slider.js';
+        import {tns} from '/node_modules/tiny-slider/src/tiny-slider.js';
       
         var slider = tns({
           container: '.my-slider',
-          items: 3,
-          slideBy: 'page',
-          autoplay: true
+          "items": 2,
+          "center": true,
+          "mouseDrag": true,
+          "loop": false,
+          "controls" : false,
+          "autoplayButtonOutput": false,
+          "nav": false,
+          "swipeAngle": false,
+          "speed": 300,
         });
         </script>
 </body>

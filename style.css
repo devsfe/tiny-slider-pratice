@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.dv {
+    margin: 0 20px 0 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.dv img {
+    width: 90%;
+    object-fit: cover;
+}
+
+.dv:hover {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
