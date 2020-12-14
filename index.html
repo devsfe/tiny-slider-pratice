@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Slider Pratice</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="my-slider">
+        <div>
+            <h1>teste</h1>
+        </div>
+        <div>
+            <h1>teste</h1>
+        </div>
+        <div>
+            <h1>teste</h1>
+        </div>
+      </div>
+      
+      
+      <script type="module">
+        import {tns} from './src/tiny-slider.js';
+      
+        var slider = tns({
+          container: '.my-slider',
+          items: 3,
+          slideBy: 'page',
+          autoplay: true
+        });
+        </script>
+</body>
+</html>
